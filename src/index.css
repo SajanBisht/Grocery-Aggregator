@@ -1,0 +1,15 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=Manrope:wght@400;500;600;700;800&display=swap');
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root { font-family: 'Manrope', sans-serif; color: #1d1d1a; background: #f7cf45; font-synthesis: none; }
+* { box-sizing: border-box; }
+body { margin: 0; min-width: 320px; }
+button, input { font: inherit; }
+button { cursor: pointer; }
+::selection { background: #1e1e1a; color: #f7cf45; }
+@keyframes float { 0%, 100% { transform: translateY(0) rotate(-6deg); } 50% { transform: translateY(-8px) rotate(3deg); } }
+@keyframes shimmer { 0% { background-position: 200% 0; } 100% { background-position: -200% 0; } }
+.animate-float { animation: float 4s ease-in-out infinite; }
+.skeleton { background: linear-gradient(90deg, rgba(255,255,255,.42), rgba(255,255,255,.75), rgba(255,255,255,.42)); background-size: 200% 100%; animation: shimmer 1.3s infinite; }
